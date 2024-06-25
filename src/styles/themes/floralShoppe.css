@@ -49,4 +49,8 @@
       @apply border-b-white border-r-white border-t-black border-l-black;
     }
   }
+
+  .button:active {
+    @apply border-b-white border-r-white border-t-black border-l-black;
+  }
 }
