@@ -20,7 +20,7 @@ export function getBirthdayDate(): Date {
 }
 
 export function isTenPower(n: number): boolean {
-  return Math.log10(n) % 1 === 0 && n !== 0;
+  return Math.log10(n) % 1 === 0 && n !== 1;
 }
 
 export function randomFireworks(duration: number = 15) {
