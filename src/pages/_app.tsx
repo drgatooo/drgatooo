@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider defaultTheme={'coffee'}>
+    <ThemeProvider defaultTheme={'coffee'} storageKey={'temita-uwu'}>
       <Component {...pageProps} />
     </ThemeProvider>
   );

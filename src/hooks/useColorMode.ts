@@ -9,13 +9,7 @@ export function useColorMode() {
   useEffect(() => {
     setTimeout(() => {
       setLoadedTheme(theme ?? 'coffee');
-
-      if (loadedTheme && !THEMES.map(t => t.className).includes(loadedTheme)) {
-        console.log(loadedTheme);
-        setTheme('coffee');
-      }
-    }, 100);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, 50);
   }, [theme]);
 
   const nextColorMode = () => {

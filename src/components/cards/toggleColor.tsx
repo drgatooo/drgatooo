@@ -32,7 +32,7 @@ export default function ToggleColorModeCard() {
           'card card-interactive group gap-2 flex justify-center items-center flex-col backdrop:blur-3xl rounded-xl p-3 overflow-hidden'
         }
       >
-        <div id={'icon'} className={''} style={{ animationFillMode: 'backwards' }}>
+        <div id={'icon'} style={{ animationFillMode: 'backwards' }}>
           {theme?.icon({ className: 'w-10 h-10' })}
         </div>
         <div className="flex flex-col">

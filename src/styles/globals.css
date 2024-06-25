@@ -48,12 +48,14 @@ i {
 @keyframes changeTheme {
   0% {
     rotate: -45deg;
+    opacity: 0;
   }
   100% {
     rotate: 0deg;
+    opacity: 1;
   }
 }
 
 .changeTheme {
-  animation: changeTheme 600ms cubic-bezier(0.16, 1, 0.3, 1);
+  animation: changeTheme 200ms ease-out;
 }
