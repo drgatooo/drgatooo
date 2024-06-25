@@ -55,5 +55,5 @@ i {
 }
 
 .changeTheme {
-  animation: changeTheme 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: changeTheme 600ms cubic-bezier(0.16, 1, 0.3, 1);
 }

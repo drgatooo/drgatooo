@@ -8,6 +8,13 @@ export default function ToggleColorModeCard() {
   const theme = THEMES.find(t => t.className === colorMode);
   const { audio, toggleAudio } = useVaporwave();
 
+  const handleIconAnimation = () => {
+    nextColorMode();
+    document.getElementById('icon')!.classList.add('changeTheme');
+    setTimeout(() => {
+      document.getElementById('icon')!.classList.remove('changeTheme');
+    }, 250);
+  };
   return (
     <>
       <button
@@ -20,13 +27,7 @@ export default function ToggleColorModeCard() {
         <span className="icon-[mdi--music]" role="img" aria-hidden="true" />
       </button>
       <button
-        onClick={() => {
-          nextColorMode();
-          document.getElementById('icon')!.classList.add('changeTheme');
-          setTimeout(() => {
-            document.getElementById('icon')!.classList.remove('changeTheme');
-          }, 250);
-        }}
+        onClick={handleIconAnimation}
         className={
           'card card-interactive group gap-2 flex justify-center items-center flex-col backdrop:blur-3xl rounded-xl p-3 overflow-hidden'
         }
@@ -35,7 +36,9 @@ export default function ToggleColorModeCard() {
           {theme?.icon({ className: 'w-10 h-10' })}
         </div>
         <div className="flex flex-col">
-          <span className={'text-center font-bold'}>{theme?.name ?? colorMode}</span>
+          <span className={'text-center font-bold'}>
+            {theme?.name ?? colorMode ?? 'Cargando...'}
+          </span>
           <span className={'text-xs'}>tema actual</span>
         </div>
       </button>
