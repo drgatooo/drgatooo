@@ -1,0 +1,17 @@
+[data-theme='coffee'] {
+  --background: theme('colors.zinc.900');
+  --card-color: theme('colors.zinc.800');
+  --accent-color: theme('colors.coffee.500');
+
+  /* text colors */
+  --color-text: theme('colors.zinc.300');
+  --heading-1-color: theme('colors.coffee.300');
+  --link-color: theme('colors.coffee.400');
+
+  .button {
+    @apply bg-card rounded-lg p-2 transition;
+    &:focus {
+      @apply ring-2 ring-accent;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+[data-theme='love'] {
+  --background: theme('colors.darling.200');
+  --card-color: theme('colors.darling.100');
+  --accent-color: theme('colors.darling.500');
+
+  /* text colors */
+  --color-text: theme('colors.zinc.900');
+  --heading-1-color: theme('colors.darling.800');
+  --link-color: theme('colors.darling.400');
+
+  h1,
+  h2,
+  p {
+    &::after {
+      content: ' ♡';
+    }
+  }
+
+  .button {
+    @apply bg-card rounded-lg p-2 transition;
+    &:focus {
+      @apply ring-2 ring-accent;
+    }
+  }
+}

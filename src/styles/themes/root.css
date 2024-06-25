@@ -1,0 +1,17 @@
+[data-theme='default'] {
+  --background: theme('colors.white');
+  --card-color: theme('colors.zinc.200');
+  --accent-color: theme('colors.blue.500');
+
+  /* text colors */
+  --color-text: theme('colors.zinc.900');
+  --heading-1-color: theme('colors.zinc.900');
+  --link-color: theme('colors.blue.500');
+
+  .button {
+    @apply bg-card rounded-lg p-2 transition;
+    &:focus {
+      @apply ring-2 ring-accent;
+    }
+  }
+}

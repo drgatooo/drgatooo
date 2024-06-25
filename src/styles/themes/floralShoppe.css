@@ -1,0 +1,52 @@
+[data-theme='floralShoppe'] {
+  --background: #ff819c;
+  --card-color: #d2d6d7;
+  --accent-color: #6cffb9;
+
+  /* text colors */
+  --color-text: #0d1019;
+  --heading-1-color: #6cffb9;
+  --link-color: #6cffb9;
+
+  h1 {
+    @apply font-medium uppercase drop-shadow-[2px_2px_2px_#00000055] underline;
+
+    &::after {
+      content: ' — マティアス';
+    }
+  }
+
+  h2 {
+    @apply font-medium text-accent drop-shadow-[2px_2px_2px_#00000055];
+  }
+
+  a:not(.card) {
+    @apply text-accent drop-shadow-[1px_1px_1px_#00000055];
+    &:hover {
+      @apply underline;
+    }
+  }
+
+  .avatar {
+    @apply !rounded-none;
+  }
+
+  .card {
+    @apply border-2 border-b-black border-r-black border-t-white border-l-white rounded-none;
+  }
+
+  .header {
+    background: -webkit-linear-gradient(left, #08216b, #a5cef7);
+    z-index: 5;
+    h3 {
+      @apply text-white;
+    }
+  }
+
+  .button {
+    @apply bg-card border-2 border-b-black border-r-black border-t-white border-l-white;
+    &:active {
+      @apply border-b-white border-r-white border-t-black border-l-black;
+    }
+  }
+}

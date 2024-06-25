@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import './themes/root.css';
+@import './themes/coffee.css';
+@import './themes/dollar.css';
+@import './themes/love.css';
+@import './themes/floralShoppe.css';
+
+* {
+  color: var(--color-text);
+}
+
+body {
+  background: var(--background);
+}
+
+h1 {
+  color: var(--heading-1-color);
+  @apply text-4xl font-black;
+}
+
+h2 {
+  @apply text-2xl font-bold italic;
+}
+
+h3 {
+  @apply text-xl font-bold;
+}
+
+i {
+  @apply text-2xl;
+}
+
+.avatar {
+  @apply rounded-full;
+}
+
+.card {
+  @apply bg-card border border-zinc-500/50 relative transition;
+}
+
+.card-interactive {
+  @apply hover:scale-[98%];
+}
+
+@keyframes changeTheme {
+  0% {
+    rotate: -45deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+.changeTheme {
+  animation: changeTheme 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}

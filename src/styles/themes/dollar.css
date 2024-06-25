@@ -1,0 +1,17 @@
+[data-theme='dollar'] {
+  --background: theme('colors.dollar.100');
+  --card-color: theme('colors.dollar.200');
+  --accent-color: theme('colors.dollar-accent.600');
+
+  /* text colors */
+  --color-text: theme('colors.dollar.900');
+  --heading-1-color: theme('colors.dollar-accent.600');
+  --link-color: theme('colors.dollar-accent.400');
+
+  .button {
+    @apply bg-card rounded-lg p-2 transition;
+    &:focus {
+      @apply ring-2 ring-accent;
+    }
+  }
+}
