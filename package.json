@@ -13,10 +13,12 @@
     "canvas-confetti": "^1.9.3",
     "next": "14.2.4",
     "next-themes": "^0.3.0",
+    "postcss-nesting": "^12.1.5",
     "react": "^18",
     "react-countdown": "^2.3.5",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.4",
+    "sharp": "^0.33.4",
     "spotify-types": "^1.0.7",
     "swr": "^2.2.5"
   },
