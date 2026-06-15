@@ -1,4 +1,4 @@
-## Hi there 👋
+![xd](https://images.steamusercontent.com/ugc/53587313644684695/670E41117E08543E73BFECE9A79EBE64299F3E13/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)
 
 <!--
 **drgatooo/drgatooo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
